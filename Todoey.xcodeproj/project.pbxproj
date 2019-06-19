@@ -12,6 +12,7 @@
 		85A819B622B51C1E0007EBB6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 85A819B422B51C1E0007EBB6 /* Main.storyboard */; };
 		85A819B822B51C200007EBB6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 85A819B722B51C200007EBB6 /* Assets.xcassets */; };
 		85A819BB22B51C200007EBB6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 85A819B922B51C200007EBB6 /* LaunchScreen.storyboard */; };
+		85A819C522B91D560007EBB6 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85A819C422B91D560007EBB6 /* Item.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		85A819B722B51C200007EBB6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		85A819BA22B51C200007EBB6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		85A819BC22B51C200007EBB6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		85A819C422B91D560007EBB6 /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,9 +56,10 @@
 		85A819AF22B51C1E0007EBB6 /* Todoey */ = {
 			isa = PBXGroup;
 			children = (
+				85A819C422B91D560007EBB6 /* Item.swift */,
+				85A819B422B51C1E0007EBB6 /* Main.storyboard */,
 				85A819B022B51C1E0007EBB6 /* AppDelegate.swift */,
 				85A819B222B51C1E0007EBB6 /* TodoListViewController.swift */,
-				85A819B422B51C1E0007EBB6 /* Main.storyboard */,
 				85A819B722B51C200007EBB6 /* Assets.xcassets */,
 				85A819B922B51C200007EBB6 /* LaunchScreen.storyboard */,
 				85A819BC22B51C200007EBB6 /* Info.plist */,
@@ -136,6 +139,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				85A819B322B51C1E0007EBB6 /* TodoListViewController.swift in Sources */,
+				85A819C522B91D560007EBB6 /* Item.swift in Sources */,
 				85A819B122B51C1E0007EBB6 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
