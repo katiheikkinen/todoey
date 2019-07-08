@@ -21,15 +21,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         //where our database exists
         print(Realm.Configuration.defaultConfiguration.fileURL)
         
-        let data = Data()
-        data.name = "Kati"
-        data.age = 31
 
         do {
             let realm = try Realm()
-            try realm.write {
-                realm.add(data)
-            }
+
         } catch {
             print ("Error initialising new realn, \(error) ")
         }
