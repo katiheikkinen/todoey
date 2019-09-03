@@ -46,26 +46,20 @@ class TodoListViewController: UITableViewController {
     
     //MARK - TableView Delegate Methods
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        
-        //another way to update: itemArray[indexPath.row].setValue("Completed", forKey: "title")
-//        toDoItems[indexPath.row].done = !toDoItems[indexPath.row].done
-//
-//        saveItems()
-//
-       // tableView.reloadData()
+        if let item = toDoItems?[indexPath.row] {
+            do {
+            try realm.write {
+               item.done = !item.done
+               // realm.delete(item)
+            }
+            } catch {
+                print("Error saving done status, \(error)")
+            }
+            }
+        tableView.reloadData()
         tableView.deselectRow(at: indexPath, animated: true)
     }
-    
-//    func saveItems() {
-//
-//        do {
-//            try context.save()
-//        } catch {
-//            print("Error saving context \(error)")
-//        }
-//        self.tableView.reloadData()
-//
-//    }
+
     
     func loadItems() {
         

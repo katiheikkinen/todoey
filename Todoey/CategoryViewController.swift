@@ -20,7 +20,6 @@ class CategoryViewController: UITableViewController {
     }
     
     //MARK: - TableView Datasource Methods
-
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return categoryArray?.count ?? 1
     }
@@ -47,9 +46,7 @@ class CategoryViewController: UITableViewController {
     }
     
     func loadItems() {
-        
         categoryArray = realm.objects(Category.self)
-
         tableView.reloadData()
     }
     
